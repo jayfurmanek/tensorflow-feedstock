@@ -96,7 +96,7 @@ requirements:
     # don't include tensorboard with base
     # don't include tensorflow_estimator
     - termcolor {{ termcolor }}
-    - typing_extensions {{ typing_extensions }}
+    - typing_extensions {{ typing_extensions }}     # [py<38]
     - wrapt {{ wrapt }}
     - wheel {{ wheel }}
     - six {{ six }}
@@ -107,7 +107,7 @@ requirements:
     - cudatoolkit {{ cudatoolkit }}
     - cudnn {{ cudnn }}
     - nccl {{ nccl }}
-    - tensorrt {{ tensorrt }}         #[py<38]
+    - tensorrt {{ tensorrt }}     #[py<38]
 {% endif %}
     # Included for keras team keras
     - pillow {{ pillow }}
@@ -125,7 +125,7 @@ requirements:
     # don't include tensorboard with base
     # don't include tensorflow_estimator
     - termcolor {{ termcolor }}
-    - typing_extensions {{ typing_extensions }}
+    - typing_extensions {{ typing_extensions }}     # [py<38]
     - wrapt {{ wrapt }}
     - wheel {{ wheel }}
     - six {{ six }}
